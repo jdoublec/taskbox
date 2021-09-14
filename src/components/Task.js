@@ -14,10 +14,12 @@ export default function Task({
                defaultChecked={state === "TASK_ARCHIVED"}
                disabled={true}
                name="checked"
+               style={{ color: 'cream', backgroundColor: 'gray'}}
             />
             <span
                className="checkbox-custom"
                onClick={() => onArchiveTask(id)}
+               style={{ color: 'cream', backgroundColor: 'gray'}}
             />
          </label>
          <div className="title">
@@ -26,7 +28,7 @@ export default function Task({
                value={title}
                readOnly={true}
                placeholder="Input title"
-               style={{ background: 'red' }}
+               style={{ color: 'cream', backgroundColor: 'gray' }}
             />
          </div>
 
